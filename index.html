@@ -1,0 +1,77 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="name-form">
+        <input type="text" id="player-x-name" placeholder="Enter name for Player X">
+        <input type="text" id="player-o-name" placeholder="Enter name for Player O">
+        <button type="button" onclick="startGame()">Start Game</button>
+        <button id="end-game-button" onclick="endGame()">End Game</button>
+    </form>
+    
+    <div id="game-container" style="display:none;">
+        <table id="game-board">
+            <!-- The board will be created by JavaScript -->
+        </table>
+        <button id="reset-button">Reset Game</button>
+        <!-- Inside the game-container div, after the reset button -->
+        <button id="new-challenge-button" style="display: none;">New Challenge</button>
+        <button id="end-game-button" onclick="endGame()">End Game</button>
+        <button id="update-page-button" onclick="updatePage()">New Challenge</button>
+        <p id="status-message"></p>
+    </div>
+    
+    <div id="timer-container" style="display:none;">
+        <p id="timer"></p>
+    </div>
+
+    
+    <!-- Images and extra elements for requirements -->
+    <img id="player-1-win" src="images/image2.png" alt="Player 1 wins!" style="display:none;">
+    <img id="player-2-win" src="images/image3.png" alt="Player 2 wins!" style="display:none;">
+    <img id="tie-game" src="images/image4.png" alt="It's a tie!" style="display:none;" width="1000px">
+    <!-- Add other images and buttons as needed -->
+    <button id="restart-button" style="display: none;">Restart Game</button>
+
+    <!-- Addendum Section -->
+    <!-- <section id="addendum">
+        <h2>Development Process and Creative Choices</h2>
+        <p>
+            Our journey to creating the Tic Tac Toe game was both challenging and enlightening. 
+            We started by outlining the game's basic requirements - a grid for gameplay, a system to identify the turns, 
+            and a mechanism to declare a winner or a tie. The layout was implemented using HTML and styled with CSS 
+            to create a visually appealing and responsive interface.
+        </p>
+        <p>
+            Creative choices were made to ensure that the game was not only functional but also engaging. 
+            We chose a color palette that was easy on the eyes, and implemented subtle animations for cell 
+            selection to provide users with immediate feedback on their actions. Each player's turn was clearly 
+            displayed, and we added personalized touches such as allowing players to enter their names, enhancing 
+            the game's interactivity.
+        </p>
+        <p>
+            One of the biggest challenges was ensuring the game logic accurately assessed win conditions 
+            in all scenarios. This required careful planning and testing of the logic statements that evaluated 
+            the state of the game board. We overcame these challenges through iterative development and constant 
+            testing, which also provided a deeper understanding of JavaScript's capabilities in building 
+            interactive web applications.
+        </p>
+        <p>
+            This project was a practical exercise in applying web development principles, and it highlighted 
+            the importance of user experience design. We gained insights into how the front-end interplays 
+            with the backend logic, the significance of a mobile-first approach, and the need for clear 
+            user instructions and feedback. The finished game is a testament to the power of combining 
+            technical skill with user-centric design to create applications that are both useful and 
+            delightful to use.
+        </p>
+    </section> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

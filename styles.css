@@ -1,0 +1,117 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    text-align: center;
+}
+
+
+#game-board {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#game-board tr {
+    transition: background-color 0.5s;
+}
+
+#game-board td {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #7f8c8d;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#game-board td:hover {
+    background-color: #bdc3c7;
+}
+
+#reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset-button:hover {
+    background-color: #2980b9;
+}
+
+#status-message {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* ... existing styles ... */
+
+#end-game-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#end-game-button:hover {
+    background-color: #c0392b;
+}
+
+#update-page-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#update-page-button:hover {
+    background-color: #27ae60;
+}
+
+#timer-container {
+    margin-top: 20px;
+}
+
+#timer {
+    font-size: 24px;
+    color: #c0392b;
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #game-board td {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
